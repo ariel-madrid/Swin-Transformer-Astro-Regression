@@ -1,0 +1,57 @@
+Lmod Warning:
+-------------------------------------------------------------------------------
+The following dependent module(s) are not currently loaded:
+glibc/2.34-zen4-ed5siie (required by: zlib-ng/2.2.1-zen4-f)
+-------------------------------------------------------------------------------
+
+
+
+/home/aargomedo/TESIS/Swin-Transformer/Swin-Transformer-Four-Channel-Tensor/kernels/window_process/swin_window_process.cpp -> /home/aargomedo/TESIS/Swin-Transformer/Swin-Transformer-Four-Channel-Tensor/kernels/window_process/swin_window_process.cpp [skipped, no changes]
+/home/aargomedo/TESIS/Swin-Transformer/Swin-Transformer-Four-Channel-Tensor/kernels/window_process/swin_window_process_kernel.cu -> /home/aargomedo/TESIS/Swin-Transformer/Swin-Transformer-Four-Channel-Tensor/kernels/window_process/swin_window_process_kernel.hip [skipped, already hipified]
+[92mSuccessfully preprocessed all matching files.[0m
+Total number of unsupported CUDA function calls: 0
+
+
+Total number of replaced kernel launches: 4
+running install
+/home/aargomedo/miniconda3/envs/swin_slurm/lib/python3.9/site-packages/setuptools/_distutils/cmd.py:79: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+/home/aargomedo/miniconda3/envs/swin_slurm/lib/python3.9/site-packages/setuptools/_distutils/cmd.py:79: EasyInstallDeprecationWarning: easy_install command is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` and ``easy_install``.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://github.com/pypa/setuptools/issues/917 for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running bdist_egg
+running egg_info
+writing swin_window_process.egg-info/PKG-INFO
+writing dependency_links to swin_window_process.egg-info/dependency_links.txt
+writing top-level names to swin_window_process.egg-info/top_level.txt
+reading manifest file 'swin_window_process.egg-info/SOURCES.txt'
+writing manifest file 'swin_window_process.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_ext
+building 'swin_window_process' extension
+Emitting ninja build file /home/aargomedo/TESIS/Swin-Transformer/Swin-Transformer-Four-Channel-Tensor/kernels/window_process/build/temp.linux-x86_64-cpython-39/build.ninja...
+Compiling objects...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+slurmstepd: error: *** JOB 46216197 ON gn004 CANCELLED AT 2025-03-13T18:30:06 ***
