@@ -1,0 +1,49 @@
+[2025-10-23 06:57:46 trial_33] (main.py 86): INFO --- Iniciando Trial 33 ---
+[2025-10-23 06:57:46 trial_33] (main.py 87): INFO Hiperparámetros: {'lr': 0.0004930845939540267, 'weight_decay': 0.10275571099826097, 'drop_rate': 0.31416998340490776, 'drop_path_rate': 0.15454178031873178, 'clip_grad': 1.9677702606543142, 'warmup_epochs': 8}
+[2025-10-23 06:58:26 trial_33] (main.py 47): INFO T33 E0 | Train Loss: 0.072889
+[2025-10-23 06:58:29 trial_33] (main.py 105): INFO T33 E0 | Val Loss: 0.067720 (Mejor: 0.067720)
+[2025-10-23 06:59:09 trial_33] (main.py 47): INFO T33 E1 | Train Loss: 0.062297
+[2025-10-23 06:59:12 trial_33] (main.py 105): INFO T33 E1 | Val Loss: 0.056235 (Mejor: 0.056235)
+[2025-10-23 06:59:51 trial_33] (main.py 47): INFO T33 E2 | Train Loss: 0.051631
+[2025-10-23 06:59:55 trial_33] (main.py 105): INFO T33 E2 | Val Loss: 0.047782 (Mejor: 0.047782)
+[2025-10-23 07:00:34 trial_33] (main.py 47): INFO T33 E3 | Train Loss: 0.043678
+[2025-10-23 07:00:37 trial_33] (main.py 105): INFO T33 E3 | Val Loss: 0.040224 (Mejor: 0.040224)
+[2025-10-23 07:01:17 trial_33] (main.py 47): INFO T33 E4 | Train Loss: 0.039340
+[2025-10-23 07:01:20 trial_33] (main.py 105): INFO T33 E4 | Val Loss: 0.038842 (Mejor: 0.038842)
+[2025-10-23 07:02:00 trial_33] (main.py 47): INFO T33 E5 | Train Loss: 0.037203
+[2025-10-23 07:02:03 trial_33] (main.py 105): INFO T33 E5 | Val Loss: 0.034657 (Mejor: 0.034657)
+[2025-10-23 07:02:43 trial_33] (main.py 47): INFO T33 E6 | Train Loss: 0.034488
+[2025-10-23 07:02:46 trial_33] (main.py 105): INFO T33 E6 | Val Loss: 0.033933 (Mejor: 0.033933)
+[2025-10-23 07:03:26 trial_33] (main.py 47): INFO T33 E7 | Train Loss: 0.032750
+[2025-10-23 07:03:29 trial_33] (main.py 105): INFO T33 E7 | Val Loss: 0.033085 (Mejor: 0.033085)
+[2025-10-23 07:04:08 trial_33] (main.py 47): INFO T33 E8 | Train Loss: 0.031151
+[2025-10-23 07:04:12 trial_33] (main.py 105): INFO T33 E8 | Val Loss: 0.031040 (Mejor: 0.031040)
+[2025-10-23 07:04:51 trial_33] (main.py 47): INFO T33 E9 | Train Loss: 0.028874
+[2025-10-23 07:04:54 trial_33] (main.py 105): INFO T33 E9 | Val Loss: 0.030652 (Mejor: 0.030652)
+[2025-10-23 07:05:34 trial_33] (main.py 47): INFO T33 E10 | Train Loss: 0.027368
+[2025-10-23 07:05:37 trial_33] (main.py 105): INFO T33 E10 | Val Loss: 0.027117 (Mejor: 0.027117)
+[2025-10-23 07:06:17 trial_33] (main.py 47): INFO T33 E11 | Train Loss: 0.026549
+[2025-10-23 07:06:20 trial_33] (main.py 105): INFO T33 E11 | Val Loss: 0.026832 (Mejor: 0.026832)
+[2025-10-23 07:07:00 trial_33] (main.py 47): INFO T33 E12 | Train Loss: 0.025276
+[2025-10-23 07:07:03 trial_33] (main.py 105): INFO T33 E12 | Val Loss: 0.028371 (Mejor: 0.026832)
+[2025-10-23 07:07:43 trial_33] (main.py 47): INFO T33 E13 | Train Loss: 0.025144
+[2025-10-23 07:07:46 trial_33] (main.py 105): INFO T33 E13 | Val Loss: 0.024464 (Mejor: 0.024464)
+[2025-10-23 07:08:26 trial_33] (main.py 47): INFO T33 E14 | Train Loss: 0.023853
+[2025-10-23 07:08:29 trial_33] (main.py 105): INFO T33 E14 | Val Loss: 0.023646 (Mejor: 0.023646)
+[2025-10-23 07:09:09 trial_33] (main.py 47): INFO T33 E15 | Train Loss: 0.023021
+[2025-10-23 07:09:12 trial_33] (main.py 105): INFO T33 E15 | Val Loss: 0.022162 (Mejor: 0.022162)
+[2025-10-23 07:09:52 trial_33] (main.py 47): INFO T33 E16 | Train Loss: 0.022055
+[2025-10-23 07:09:55 trial_33] (main.py 105): INFO T33 E16 | Val Loss: 0.022314 (Mejor: 0.022162)
+[2025-10-23 07:10:35 trial_33] (main.py 47): INFO T33 E17 | Train Loss: 0.021883
+[2025-10-23 07:10:38 trial_33] (main.py 105): INFO T33 E17 | Val Loss: 0.021999 (Mejor: 0.021999)
+[2025-10-23 07:11:18 trial_33] (main.py 47): INFO T33 E18 | Train Loss: 0.021025
+[2025-10-23 07:11:21 trial_33] (main.py 105): INFO T33 E18 | Val Loss: 0.021401 (Mejor: 0.021401)
+[2025-10-23 07:12:01 trial_33] (main.py 47): INFO T33 E19 | Train Loss: 0.020422
+[2025-10-23 07:12:04 trial_33] (main.py 105): INFO T33 E19 | Val Loss: 0.020560 (Mejor: 0.020560)
+[2025-10-23 07:12:44 trial_33] (main.py 47): INFO T33 E20 | Train Loss: 0.019746
+[2025-10-23 07:12:47 trial_33] (main.py 105): INFO T33 E20 | Val Loss: 0.021583 (Mejor: 0.020560)
+[2025-10-23 07:13:27 trial_33] (main.py 47): INFO T33 E21 | Train Loss: 0.019139
+[2025-10-23 07:13:30 trial_33] (main.py 105): INFO T33 E21 | Val Loss: 0.020540 (Mejor: 0.020540)
+[2025-10-23 07:14:10 trial_33] (main.py 47): INFO T33 E22 | Train Loss: 0.018406
+[2025-10-23 07:14:12 trial_33] (main.py 105): INFO T33 E22 | Val Loss: 0.020578 (Mejor: 0.020540)
+[2025-10-23 07:14:12 trial_33] (main.py 109): INFO Trial 33 podado por Optuna.

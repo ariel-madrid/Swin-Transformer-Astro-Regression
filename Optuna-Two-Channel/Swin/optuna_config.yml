@@ -1,0 +1,13 @@
+OUTPUT: '/home/aargomedo/TESIS/output'
+DATA:
+  FITS: '/home/aargomedo/TESIS/Preprocesar/preprocessed_image_plane_2chan'
+  BATCH_SIZE: 32
+  NUM_WORKERS: 4
+MODEL:
+  TYPE: 'conv_vit' # Fija el modelo a optimizar
+  NAME: 'optuna_cvt'
+  IN_CHANS: 2
+  NUM_CLASSES: 6
+TRAIN:
+  WARMUP_EPOCHS: 10 # Un warmup más corto para los trials de optuna
+  CLIP_GRAD: 5.0

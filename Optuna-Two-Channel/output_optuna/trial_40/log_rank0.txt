@@ -1,0 +1,35 @@
+[2025-10-23 08:49:58 trial_40] (main.py 86): INFO --- Iniciando Trial 40 ---
+[2025-10-23 08:49:58 trial_40] (main.py 87): INFO Hiperparámetros: {'lr': 4.7858759668007504e-05, 'weight_decay': 0.03265169555358456, 'drop_rate': 0.19537315448778417, 'drop_path_rate': 0.22358736464326429, 'clip_grad': 3.0867862564271733, 'warmup_epochs': 7}
+[2025-10-23 08:50:38 trial_40] (main.py 47): INFO T40 E0 | Train Loss: 0.071326
+[2025-10-23 08:50:41 trial_40] (main.py 105): INFO T40 E0 | Val Loss: 0.070508 (Mejor: 0.070508)
+[2025-10-23 08:51:20 trial_40] (main.py 47): INFO T40 E1 | Train Loss: 0.067764
+[2025-10-23 08:51:23 trial_40] (main.py 105): INFO T40 E1 | Val Loss: 0.066802 (Mejor: 0.066802)
+[2025-10-23 08:52:03 trial_40] (main.py 47): INFO T40 E2 | Train Loss: 0.064150
+[2025-10-23 08:52:05 trial_40] (main.py 105): INFO T40 E2 | Val Loss: 0.061790 (Mejor: 0.061790)
+[2025-10-23 08:52:45 trial_40] (main.py 47): INFO T40 E3 | Train Loss: 0.060095
+[2025-10-23 08:52:48 trial_40] (main.py 105): INFO T40 E3 | Val Loss: 0.058515 (Mejor: 0.058515)
+[2025-10-23 08:53:28 trial_40] (main.py 47): INFO T40 E4 | Train Loss: 0.056222
+[2025-10-23 08:53:31 trial_40] (main.py 105): INFO T40 E4 | Val Loss: 0.055066 (Mejor: 0.055066)
+[2025-10-23 08:54:10 trial_40] (main.py 47): INFO T40 E5 | Train Loss: 0.053477
+[2025-10-23 08:54:13 trial_40] (main.py 105): INFO T40 E5 | Val Loss: 0.051814 (Mejor: 0.051814)
+[2025-10-23 08:54:53 trial_40] (main.py 47): INFO T40 E6 | Train Loss: 0.049536
+[2025-10-23 08:54:56 trial_40] (main.py 105): INFO T40 E6 | Val Loss: 0.048661 (Mejor: 0.048661)
+[2025-10-23 08:55:35 trial_40] (main.py 47): INFO T40 E7 | Train Loss: 0.045210
+[2025-10-23 08:55:38 trial_40] (main.py 105): INFO T40 E7 | Val Loss: 0.047249 (Mejor: 0.047249)
+[2025-10-23 08:56:18 trial_40] (main.py 47): INFO T40 E8 | Train Loss: 0.042091
+[2025-10-23 08:56:21 trial_40] (main.py 105): INFO T40 E8 | Val Loss: 0.042940 (Mejor: 0.042940)
+[2025-10-23 08:57:00 trial_40] (main.py 47): INFO T40 E9 | Train Loss: 0.038948
+[2025-10-23 08:57:03 trial_40] (main.py 105): INFO T40 E9 | Val Loss: 0.039145 (Mejor: 0.039145)
+[2025-10-23 08:57:43 trial_40] (main.py 47): INFO T40 E10 | Train Loss: 0.037664
+[2025-10-23 08:57:45 trial_40] (main.py 105): INFO T40 E10 | Val Loss: 0.037452 (Mejor: 0.037452)
+[2025-10-23 08:58:25 trial_40] (main.py 47): INFO T40 E11 | Train Loss: 0.035901
+[2025-10-23 08:58:28 trial_40] (main.py 105): INFO T40 E11 | Val Loss: 0.036105 (Mejor: 0.036105)
+[2025-10-23 08:59:08 trial_40] (main.py 47): INFO T40 E12 | Train Loss: 0.035618
+[2025-10-23 08:59:10 trial_40] (main.py 105): INFO T40 E12 | Val Loss: 0.036051 (Mejor: 0.036051)
+[2025-10-23 08:59:50 trial_40] (main.py 47): INFO T40 E13 | Train Loss: 0.034781
+[2025-10-23 08:59:53 trial_40] (main.py 105): INFO T40 E13 | Val Loss: 0.033574 (Mejor: 0.033574)
+[2025-10-23 09:00:33 trial_40] (main.py 47): INFO T40 E14 | Train Loss: 0.033512
+[2025-10-23 09:00:36 trial_40] (main.py 105): INFO T40 E14 | Val Loss: 0.033794 (Mejor: 0.033574)
+[2025-10-23 09:01:15 trial_40] (main.py 47): INFO T40 E15 | Train Loss: 0.033017
+[2025-10-23 09:01:18 trial_40] (main.py 105): INFO T40 E15 | Val Loss: 0.033375 (Mejor: 0.033375)
+[2025-10-23 09:01:18 trial_40] (main.py 109): INFO Trial 40 podado por Optuna.

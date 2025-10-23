@@ -1,9 +1,0 @@
-torchrun --nproc_per_node=4 \
-         --nnodes=1 \
-         --node_rank=$NODE_RANK \
-         --master_addr=$MASTER_ADDR \
-         --master_port=$MASTER_PORT \
-         /home/aargomedo/TESIS/Modelos/Two-Six/Swin/main.py \
-         --fits-path /home/aargomedo/TESIS/Modelos/Two-Channel/rutas_fits.txt \
-         --cfg configs/swin/swin_base_patch4_window7_224.yaml \
-         --accumulation-steps 1

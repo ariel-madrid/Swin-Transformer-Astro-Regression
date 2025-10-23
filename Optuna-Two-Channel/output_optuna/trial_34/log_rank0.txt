@@ -1,0 +1,65 @@
+[2025-10-23 07:14:12 trial_34] (main.py 86): INFO --- Iniciando Trial 34 ---
+[2025-10-23 07:14:12 trial_34] (main.py 87): INFO Hiperparámetros: {'lr': 0.0002972536011307365, 'weight_decay': 0.07403981138680187, 'drop_rate': 0.42420086909445975, 'drop_path_rate': 0.11342283794924266, 'clip_grad': 1.5655891321069089, 'warmup_epochs': 7}
+[2025-10-23 07:14:52 trial_34] (main.py 47): INFO T34 E0 | Train Loss: 0.071545
+[2025-10-23 07:14:55 trial_34] (main.py 105): INFO T34 E0 | Val Loss: 0.067990 (Mejor: 0.067990)
+[2025-10-23 07:15:34 trial_34] (main.py 47): INFO T34 E1 | Train Loss: 0.063421
+[2025-10-23 07:15:37 trial_34] (main.py 105): INFO T34 E1 | Val Loss: 0.059508 (Mejor: 0.059508)
+[2025-10-23 07:16:17 trial_34] (main.py 47): INFO T34 E2 | Train Loss: 0.055744
+[2025-10-23 07:16:20 trial_34] (main.py 105): INFO T34 E2 | Val Loss: 0.054917 (Mejor: 0.054917)
+[2025-10-23 07:16:59 trial_34] (main.py 47): INFO T34 E3 | Train Loss: 0.046420
+[2025-10-23 07:17:02 trial_34] (main.py 105): INFO T34 E3 | Val Loss: 0.047587 (Mejor: 0.047587)
+[2025-10-23 07:17:42 trial_34] (main.py 47): INFO T34 E4 | Train Loss: 0.040015
+[2025-10-23 07:17:44 trial_34] (main.py 105): INFO T34 E4 | Val Loss: 0.043308 (Mejor: 0.043308)
+[2025-10-23 07:18:24 trial_34] (main.py 47): INFO T34 E5 | Train Loss: 0.037608
+[2025-10-23 07:18:27 trial_34] (main.py 105): INFO T34 E5 | Val Loss: 0.041306 (Mejor: 0.041306)
+[2025-10-23 07:19:06 trial_34] (main.py 47): INFO T34 E6 | Train Loss: 0.035095
+[2025-10-23 07:19:09 trial_34] (main.py 105): INFO T34 E6 | Val Loss: 0.035330 (Mejor: 0.035330)
+[2025-10-23 07:19:49 trial_34] (main.py 47): INFO T34 E7 | Train Loss: 0.033079
+[2025-10-23 07:19:52 trial_34] (main.py 105): INFO T34 E7 | Val Loss: 0.035510 (Mejor: 0.035330)
+[2025-10-23 07:20:32 trial_34] (main.py 47): INFO T34 E8 | Train Loss: 0.031750
+[2025-10-23 07:20:34 trial_34] (main.py 105): INFO T34 E8 | Val Loss: 0.029822 (Mejor: 0.029822)
+[2025-10-23 07:21:14 trial_34] (main.py 47): INFO T34 E9 | Train Loss: 0.029567
+[2025-10-23 07:21:17 trial_34] (main.py 105): INFO T34 E9 | Val Loss: 0.027817 (Mejor: 0.027817)
+[2025-10-23 07:21:57 trial_34] (main.py 47): INFO T34 E10 | Train Loss: 0.028465
+[2025-10-23 07:22:00 trial_34] (main.py 105): INFO T34 E10 | Val Loss: 0.027985 (Mejor: 0.027817)
+[2025-10-23 07:22:39 trial_34] (main.py 47): INFO T34 E11 | Train Loss: 0.027334
+[2025-10-23 07:22:42 trial_34] (main.py 105): INFO T34 E11 | Val Loss: 0.037758 (Mejor: 0.027817)
+[2025-10-23 07:23:22 trial_34] (main.py 47): INFO T34 E12 | Train Loss: 0.026818
+[2025-10-23 07:23:25 trial_34] (main.py 105): INFO T34 E12 | Val Loss: 0.025740 (Mejor: 0.025740)
+[2025-10-23 07:24:04 trial_34] (main.py 47): INFO T34 E13 | Train Loss: 0.025795
+[2025-10-23 07:24:07 trial_34] (main.py 105): INFO T34 E13 | Val Loss: 0.025441 (Mejor: 0.025441)
+[2025-10-23 07:24:47 trial_34] (main.py 47): INFO T34 E14 | Train Loss: 0.024375
+[2025-10-23 07:24:50 trial_34] (main.py 105): INFO T34 E14 | Val Loss: 0.025746 (Mejor: 0.025441)
+[2025-10-23 07:25:29 trial_34] (main.py 47): INFO T34 E15 | Train Loss: 0.023788
+[2025-10-23 07:25:32 trial_34] (main.py 105): INFO T34 E15 | Val Loss: 0.023164 (Mejor: 0.023164)
+[2025-10-23 07:26:12 trial_34] (main.py 47): INFO T34 E16 | Train Loss: 0.022784
+[2025-10-23 07:26:15 trial_34] (main.py 105): INFO T34 E16 | Val Loss: 0.025378 (Mejor: 0.023164)
+[2025-10-23 07:26:55 trial_34] (main.py 47): INFO T34 E17 | Train Loss: 0.022032
+[2025-10-23 07:26:57 trial_34] (main.py 105): INFO T34 E17 | Val Loss: 0.022840 (Mejor: 0.022840)
+[2025-10-23 07:27:37 trial_34] (main.py 47): INFO T34 E18 | Train Loss: 0.021505
+[2025-10-23 07:27:40 trial_34] (main.py 105): INFO T34 E18 | Val Loss: 0.023079 (Mejor: 0.022840)
+[2025-10-23 07:28:20 trial_34] (main.py 47): INFO T34 E19 | Train Loss: 0.020322
+[2025-10-23 07:28:23 trial_34] (main.py 105): INFO T34 E19 | Val Loss: 0.021653 (Mejor: 0.021653)
+[2025-10-23 07:29:02 trial_34] (main.py 47): INFO T34 E20 | Train Loss: 0.019897
+[2025-10-23 07:29:05 trial_34] (main.py 105): INFO T34 E20 | Val Loss: 0.019930 (Mejor: 0.019930)
+[2025-10-23 07:29:45 trial_34] (main.py 47): INFO T34 E21 | Train Loss: 0.019128
+[2025-10-23 07:29:48 trial_34] (main.py 105): INFO T34 E21 | Val Loss: 0.022196 (Mejor: 0.019930)
+[2025-10-23 07:30:28 trial_34] (main.py 47): INFO T34 E22 | Train Loss: 0.018512
+[2025-10-23 07:30:30 trial_34] (main.py 105): INFO T34 E22 | Val Loss: 0.019844 (Mejor: 0.019844)
+[2025-10-23 07:31:10 trial_34] (main.py 47): INFO T34 E23 | Train Loss: 0.018240
+[2025-10-23 07:31:13 trial_34] (main.py 105): INFO T34 E23 | Val Loss: 0.018207 (Mejor: 0.018207)
+[2025-10-23 07:31:53 trial_34] (main.py 47): INFO T34 E24 | Train Loss: 0.017459
+[2025-10-23 07:31:56 trial_34] (main.py 105): INFO T34 E24 | Val Loss: 0.018031 (Mejor: 0.018031)
+[2025-10-23 07:32:35 trial_34] (main.py 47): INFO T34 E25 | Train Loss: 0.016575
+[2025-10-23 07:32:38 trial_34] (main.py 105): INFO T34 E25 | Val Loss: 0.017765 (Mejor: 0.017765)
+[2025-10-23 07:33:18 trial_34] (main.py 47): INFO T34 E26 | Train Loss: 0.016335
+[2025-10-23 07:33:21 trial_34] (main.py 105): INFO T34 E26 | Val Loss: 0.018478 (Mejor: 0.017765)
+[2025-10-23 07:34:00 trial_34] (main.py 47): INFO T34 E27 | Train Loss: 0.015593
+[2025-10-23 07:34:03 trial_34] (main.py 105): INFO T34 E27 | Val Loss: 0.016614 (Mejor: 0.016614)
+[2025-10-23 07:34:43 trial_34] (main.py 47): INFO T34 E28 | Train Loss: 0.015369
+[2025-10-23 07:34:46 trial_34] (main.py 105): INFO T34 E28 | Val Loss: 0.017563 (Mejor: 0.016614)
+[2025-10-23 07:35:26 trial_34] (main.py 47): INFO T34 E29 | Train Loss: 0.014925
+[2025-10-23 07:35:29 trial_34] (main.py 105): INFO T34 E29 | Val Loss: 0.016277 (Mejor: 0.016277)
+[2025-10-23 07:36:08 trial_34] (main.py 47): INFO T34 E30 | Train Loss: 0.014619
+[2025-10-23 07:36:11 trial_34] (main.py 105): INFO T34 E30 | Val Loss: 0.016243 (Mejor: 0.016243)
+[2025-10-23 07:36:11 trial_34] (main.py 109): INFO Trial 34 podado por Optuna.
