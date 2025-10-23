@@ -45,18 +45,17 @@ def plot_multipanel_comparison(predictions_df, literature_df, param_map):
             # Para otros parámetros, usamos un número de bins estándar
             bins = 20
 
-        # 1. Graficar el Histograma de tus predicciones (usando DENSIDAD)
         sns.histplot(predicted_values, bins=bins, color=color, alpha=0.6, 
                      edgecolor='black', ax=ax, stat='density', kde=False, label=f'Predicciones del Modelo (N={len(predicted_values)})')
         
-        # 2. Superponer una curva de ajuste Gaussiana
+        # Superponer una curva de ajuste Gaussiana
         mu, std = norm.fit(predicted_values)
         xmin, xmax = ax.get_xlim()
         x_range = np.linspace(xmin, xmax, 200)
         p = norm.pdf(x_range, mu, std)
         ax.plot(x_range, p, 'k-', linewidth=2.5, label=f'Ajuste Gaussiano (μ={mu:.3f}, σ={std:.3f})')
 
-        # 3. Superponer los valores de la literatura como líneas verticales
+        # Superponer los valores de la literatura como líneas verticales
         line_styles = ['--', '-.', ':', (0, (3, 1, 1, 1)), (0, (5, 5)), (0, (1, 1)), (0, (3, 5, 1, 5)), (0, (5, 1)), (0, (3, 1, 1, 1, 1, 1))]
         for i, (name, value) in enumerate(zip(literature_names, literature_values)):
             # Solo mostrar la línea si cae dentro de los límites del gráfico
@@ -78,7 +77,6 @@ def plot_multipanel_comparison(predictions_df, literature_df, param_map):
 
         plot_idx += 1
 
-    # Apagar el último subplot si no se usa
     if plot_idx < len(axes):
         for i in range(plot_idx, len(axes)):
             axes[i].axis('off')
@@ -104,14 +102,14 @@ if __name__ == '__main__':
     }
     andrews_df = pd.DataFrame(andrews_lit_data)
 
-    # --- 2. Cargar tus predicciones ---
+    # --- 2. Cargar predicciones ---
     try:
         my_predictions = pd.read_csv('resultados_finales.csv')
     except FileNotFoundError:
         print("Error: No se encontró el archivo 'resultados_finales.csv'.")
         exit()
 
-    # --- 3. Calcular H100 a partir de tus predicciones de H30 ---
+    # --- 3. Calcular H100 a partir de las predicciones de H30 ---
     if 'pred_H30' in my_predictions.columns and 'pred_psi' in my_predictions.columns:
         print("Calculando H100 a partir de las predicciones de H30 y psi...")
         my_predictions['pred_H100'] = my_predictions['pred_H30'] * ((100 / 30) ** my_predictions['pred_psi'])
@@ -127,7 +125,7 @@ if __name__ == '__main__':
         'pred_gamma': ('gamma', '', 'gray'),
         'pred_H100': ('H100', 'UA', 'darkcyan'),
         'pred_psi': ('psi', '', 'indianred'),
-        # 'pred_incl': ('incl', '$^{\\circ}$', 'darkblue') # Descomenta si quieres los 6
+        'pred_incl': ('incl', '$^{\\circ}$', 'darkblue')
     }
 
     # --- 5. Generar la figura ---

@@ -136,7 +136,7 @@ def main(config):
     logger.info("\n--- Iniciando Fase de Test Final ---\n")
     del model, model_without_ddp, optimizer, lr_scheduler
     torch.cuda.empty_cache()
-    """
+    
     #Construir nueva instancia del modelo
     model = build_model(config)
     model.cuda()
@@ -165,7 +165,6 @@ def main(config):
 
     if dist.get_rank() == 0:
         logger.info(f"Resultados Finales del Test - MSE: {loss_test_avg:.6f}, RMSE: {rmse_test_avg:.4f}")
-    """
     return 0
 
 def train_one_epoch(config, model, data_loader, optimizer, epoch, lr_scheduler, loss_scaler, mixup_fn):
@@ -376,7 +375,6 @@ def test(config, logger, data_loader, model):
     if not dist.is_initialized() or dist.get_rank() == 0:
         logger.info("--- Iniciando análisis y guardado de resultados de test ---")
         
-        # Mover el tensor final a la CPU (si no lo está ya) y convertir a NumPy
         all_outputs_np = all_outputs_tensor.cpu().numpy()
         all_targets_np = all_targets_tensor.cpu().numpy()
 
@@ -431,12 +429,11 @@ def test(config, logger, data_loader, model):
                 log_str_r2 += f"{name}: {r2_per_param[i]:.4f} | "
             
             logger.info(log_str_rmse)
-            logger.info(log_str_r2) # Nuevo log
+            logger.info(log_str_r2) 
         
         else:
             logger.error("¡No se encontraron salidas válidas en todo el test set! No se guardarán archivos de resultados.")
 
-    # Retornamos los promedios de los lotes válidos calculados por AverageMeter
     return loss_meter.avg, rmse_meter.avg
 def scale_learning_rates(config):
     scale_factor = config.DATA.BATCH_SIZE * dist.get_world_size() / 512.0

@@ -18,13 +18,12 @@ import optuna
 
 PYTORCH_MAJOR_VERSION = int(torch.__version__.split('.')[0])
 
-# --- Funciones de Entrenamiento y Validación (MODIFICADAS para no usar logger_trial como arg si no es necesario) ---
 def train_one_epoch(config, model, data_loader, optimizer, epoch, lr_scheduler, loss_scaler, current_logger):
     model.train()
     optimizer.zero_grad()
     num_steps = len(data_loader)
     batch_time, loss_meter, norm_meter, scaler_meter = AverageMeter(), AverageMeter(), AverageMeter(), AverageMeter()
-    start_time_epoch = time.time() # Renombrado para claridad
+    start_time_epoch = time.time()
     criterion_mse = torch.nn.MSELoss()
 
     for idx, (samples, targets) in enumerate(data_loader):
@@ -37,7 +36,6 @@ def train_one_epoch(config, model, data_loader, optimizer, epoch, lr_scheduler, 
             loss = criterion_mse(outputs, targets)
         
         is_second_order = hasattr(optimizer, 'is_second_order') and optimizer.is_second_order
-        # loss_scaler maneja backward y step si update_grad es True
         grad_norm = loss_scaler(loss, optimizer, clip_grad=config.TRAIN.CLIP_GRAD,
                                 parameters=model.parameters(), create_graph=is_second_order,
                                 update_grad=(idx + 1) % config.TRAIN.ACCUMULATION_STEPS == 0)
@@ -86,14 +84,11 @@ def validate(config, data_loader, model, current_logger):
             output = model(images)
         loss = criterion(output, target)
         loss_meter.update(loss.item(), target.size(0))
-        # mae = torch.abs(output.squeeze() - target).mean()
-        # mae_meter.update(mae.item(), images.size(0))
 
     current_logger.info(f' * Validation: Average Loss {loss_meter.avg:.4f}') # , Average MAE {mae_meter.avg:.3f}')
     return loss_meter.avg
 
 
-# --- Funciones de Configuración Simplificadas (sin DDP) ---
 def prepare_dataloaders_no_ddp(config, logger, NpyDataset_class, train_dir, val_dir, test_dir=None):
 
     # Definir los percentiles de clipping para las imágenes
@@ -103,7 +98,7 @@ def prepare_dataloaders_no_ddp(config, logger, NpyDataset_class, train_dir, val_
 
     transform = transforms.Compose([
         transforms.Resize((config.DATA.IMG_SIZE, config.DATA.IMG_SIZE)),  # Redimensionar la imagen
-        transforms.Normalize(mean=mean, std=std)  # Normalizar usando la media y desviaci      n est      ndar definidas
+        transforms.Normalize(mean=mean, std=std)  #
     ])
     train_dataset = NpyDataset_class(train_dir, transform)
     val_dataset = NpyDataset_class(val_dir, transform)
@@ -113,7 +108,7 @@ def prepare_dataloaders_no_ddp(config, logger, NpyDataset_class, train_dir, val_
 
     train_loader = DataLoader(
         train_dataset, batch_size=config.DATA.BATCH_SIZE, shuffle=True,
-        num_workers=config.DATA.NUM_WORKERS, pin_memory=config.DATA.PIN_MEMORY, drop_last=True # drop_last=True para train es común
+        num_workers=config.DATA.NUM_WORKERS, pin_memory=config.DATA.PIN_MEMORY, drop_last=True #
     )
     val_loader = DataLoader(
         val_dataset, batch_size=config.DATA.BATCH_SIZE, shuffle=False,
@@ -136,7 +131,7 @@ def initialize_model_optimizer_scheduler_no_ddp(config, train_loader_len, logger
     from optimizer import build_optimizer
     from lr_scheduler import build_scheduler
 
-    model = build_model_func(config) # Usar la función renombrada
+    model = build_model_func(config) 
     logger.info(f"number of params: {sum(p.numel() for p in model.parameters() if p.requires_grad)}")
     if hasattr(model, 'flops'): logger.info(f"number of GFLOPs: {model.flops() / 1e9}")
 
@@ -309,7 +304,6 @@ if __name__ == '__main__':
     main_optuna_logger.info(f"Base Swin Config BATCH_SIZE: {base_config.DATA.BATCH_SIZE}")
 
 
-    # Usar almacenamiento en memoria (no guarda el estudio en disco)
     study = optuna.create_study(
         study_name=optuna_cli_args.optuna_study_name,
         direction="minimize", 

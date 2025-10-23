@@ -23,7 +23,6 @@ def predict_on_new_data(config, model, data_loader):
     all_outputs = []
     
     with torch.no_grad():
-        # Asumimos que los .npy ya están pre-procesados, así que el Dataloader solo devuelve imágenes
         for images in tqdm(data_loader, desc="Realizando predicciones"):
             images = images.cuda(non_blocking=True)
             
@@ -78,7 +77,6 @@ def main():
     model.load_state_dict(new_state_dict, strict=True)
     model.eval()
 
-    # --- 3. Preparar DataLoader para los datos ya pre-procesados ---
     # Creamos una subclase simple de Dataset para leer solo la imagen del .npy
     class PredictionDataset(torch.utils.data.Dataset):
         def __init__(self, npy_dir):

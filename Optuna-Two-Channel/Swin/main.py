@@ -18,7 +18,6 @@ import optuna
 import sys
 
 # --- Lista de Parámetros Global ---
-# Asegúrate de que esto coincida con el modelo que estás optimizando
 param_names = ['Rc','H30','incl','mDisk', 'gamma', 'psi'] 
 
 # =============================================================================
